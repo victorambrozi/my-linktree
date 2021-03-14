@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
-    --bg-body: #35353C;
-    --bg-content: #64626D;
-    --bg-links: #111115;
+    --bg-body: linear-gradient(180deg, #F5CD13 0%, #D7551D 100%);;
+    --bg-content: #FEFAEE;
+    --bg-links: #11111550;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 500px;
+
     text-align: center;
 }
 
@@ -57,12 +58,81 @@ body {
 }
 
 .content {
-    padding: 0 30px;
+    padding: 50px 30px 20px;
     position: relative;
 }
 
-iframe {
-    width: 100%;
+.content-logos {
+    padding: 12px;
+    width: 360px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    border-radius: 40px;
+    
+    background: var(--bg-links);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+
+    position: absolute;
+    top: -35px;
+    right: 66px;
 }
 
+.content-logos img {
+    width: 40px;
+    height: 40px;
+}
+
+.content-logos img:hover {
+    transform: translateY(-2px);
+    transition: .2s;
+}
+
+.content__info > p {
+    margin: 10px 0;
+
+    text-align: left;
+
+    color: #000;
+}
+
+
+.video {
+    margin-top: 10px;
+    width: 100%;
+
+    border-radius: 30px;
+}
+
+
+.content__links {
+    margin: 15px 0;
+}
+
+.content__links li {
+    width: 100%;
+    padding: 20px 0;
+    margin: 15px 0;
+
+    border: 1px solid #b1b0b0;
+    border-radius: 40px;
+    box-shadow: 4px 4px 18px -5px rgba(179, 179, 179, 0.72);
+
+    font-size: 1.1em;
+
+}
+
+.content__links li:nth-child(1) {
+    background: #111115B0;
+
+}
+
+.content__links li:nth-child(1) a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+
+}
 
