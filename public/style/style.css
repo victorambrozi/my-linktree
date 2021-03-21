@@ -23,24 +23,24 @@ body {
 
 .container > img {
     margin-top: 15px;
-    max-width: 500px;
+    width: 104px;
     border-radius: 50%;
 
     border: 3px solid #fff;
 }
 
 .container h1 {
-    font-size: 2.225em;
+    font-size: 1.3em;
     font-weight: 700;
     line-height: 30px;
 
-    color: #fff;
+    color: #423e3e;
 }
 
 .container p {
     font-size: 1.2em;
     line-height: 27px;
-    color: #fff;
+    color: #423e3e;
 }
 
 .container p + p {
@@ -61,11 +61,12 @@ body {
 .content {
     padding: 50px 30px 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .content-logos {
     padding: 12px;
-    width: 360px;
+    width: 280px;
     
     display: flex;
     justify-content: space-around;
@@ -77,13 +78,14 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
 
     position: absolute;
-    top: -35px;
-    right: 66px;
+    top: 290px;
+    left: calc(50% - 140px);
+    
 }
 
 .content-logos img {
-    width: 40px;
-    height: 40px;
+    width: 29px;
+    height: 29px;
 }
 
 .content-logos img:hover {
@@ -148,7 +150,6 @@ body {
     position: absolute;
     left: 100%;
     top: 50px;
-    z-index: 2;
     
     visibility: hidden;
 
@@ -156,12 +157,14 @@ body {
 }
 
 .secondary-content__info.show {
-    animation: content-show .5s forwards;
+    animation: content-show 0.3s forwards;
+    
 }
 
 .secondary-content__info.hide {
-    animation: content-hide .5s forwards;
+    animation: content-hide 0.3s forwards;
 }
+
 .return {
     display: flex;
     align-items: center;
@@ -200,7 +203,7 @@ body {
 
     100% {
         left: 0;
-        visibility: 100%;
+        visibility: visible;
     }
 }
 
@@ -215,4 +218,3 @@ body {
         visibility: hidden;
     }
 }
-
